@@ -14,7 +14,10 @@ class Pong:
         self.config = config
         self.window = pygame.display.set_mode((self.config.WIN_WIDTH, self.config.WIN_HEIGHT))
         pygame.display.set_caption(self.config.TITLE)
-        pygame.display.set_icon(pygame.image.load("pong x32.png"))
+        try:
+            pygame.display.set_icon(pygame.image.load("pong x32.png"))
+        except:
+            pass
 
         self.run = self.playing = True
         self.clock = pygame.time.Clock()

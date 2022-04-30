@@ -17,7 +17,7 @@ from config import Config
 
 
 GAME_UUID = UUID.parseUUID("564807d5-ce5f-bae8-4167-c41efff92dc5")
-GAME_VERSION = manager.GameVersion("v1.0")
+GAME_VERSION = manager.GameVersion("v2.0")
 
 
 class Update(Thread):
